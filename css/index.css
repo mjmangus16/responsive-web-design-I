@@ -447,6 +447,10 @@ address {
     margin: 50px auto;
   }
 
+  .middle-img {
+    padding: 0px 10px;
+  }
+
   .heading1 h1 {
     font-size: 1em;
     width: 100%;
@@ -479,3 +483,5 @@ address {
     padding-left: 10px;
   }
 }
+
+// TEST
