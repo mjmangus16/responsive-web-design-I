@@ -1,3 +1,487 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+body {
+  max-width: 1100px;
+  margin: auto;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.container {
+  width: 90%;
+  margin: 15px auto;
+}
+
+header {
+  width: 100%;
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  text-decoration: none;
+  color: grey;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0px;
+}
+
+nav a:hover {
+  background-color: white;
+}
+
+header img {
+  margin-right: 50px;
+  text-align: center;
+  width: 180px;
+}
+
+.heading {
+  width: 100%;
+  margin-top: 92px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.heading div {
+  font-size: 80px;
+  text-align: center;
+}
+
+.heading img {
+  width: 75%;
+}
+
+.heading div h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.heading button {
+  display: inline-block;
+  width: 250px;
+  height: 35px;
+  background: none;
+}
+
+button {
+  box-shadow: 2px 3px 10px;
+}
+
+div {
+  width: 100%;
+}
+
+div section {
+  display: inline-block;
+  margin: auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.container1 {
+  display: flex;
+  margin: 50px auto;
+}
+
+.container1 section {
+  padding: 0px 25px;
+}
+
+.middle-img {
+  width: 100%;
+}
+
+.container2 {
+  display: flex;
+  margin: 50px auto;
+}
+
+.container2 section {
+  padding: 0px 25px;
+}
+
+.container3 {
+  margin-top: 50px;
+}
+
+address {
+  margin: 0px;
+  padding: 10px 0px;
+}
+
+.container4 {
+  text-align: center;
+  width: 100%;
+  margin: 75px 0px 25px;
+}
+
+.services-header-img {
+  width: 100%;
+  margin-top: 75px;
+}
+
+.services-container {
+  margin-top: 50px;
+  padding: 0px 25px;
+}
+
+.content-wrapper {
+  margin: 50px 0px;
+  padding: 25px 0px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-wrapper div {
+  display: flex;
+  margin: 25px 0px;
+}
+
+.content-wrapper div section {
+  padding: 25px;
+  border: 1px solid black;
+  width: 45%;
+  height: auto;
+  background-color: lightgrey;
+}
+
+.content-wrapper div section button {
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.bottom-wrapper {
+  display: flex;
+}
+
+.bottom-wrapper section {
+  padding: 0px 25px;
+}
+
+.bottom-wrapper p {
+  padding-bottom: 25px;
+}
+
+.bottom-wrapper ul li {
+  list-style-type: disc;
+  margin-left: 25px;
+  padding: 5px 0px;
+}
+
+.bottom-wrapper img {
+  padding: 0px 25px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .heading div {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .heading button {
+    display: inline-block;
+    width: 250px;
+    height: 35px;
+    background: none;
+  }
+
+  .content-wrapper div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-wrapper div {
+    margin: 0px;
+  }
+
+  .content-wrapper div section {
+    margin-bottom: 25px;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+
+  header img {
+    order: 0;
+    margin: auto;
+  }
+
+  header nav {
+    order: 1;
+  }
+
+  .heading {
+    margin-top: 80px;
+  }
+
+  .heading div img {
+    display: none;
+  }
+
+  .heading2 {
+    width: 0;
+  }
+
+  .heading1 {
+    margin: 50px auto;
+  }
+
+  .heading1 h1 {
+    font-size: 2em;
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    margin: 0px;
+    width: 100%;
+  }
+  header {
+    position: static;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  .heading {
+    margin-top: 0px;
+  }
+
+  .heading1 {
+    margin: 50px auto;
+  }
+
+  .middle-img {
+    padding: 0px 10px;
+  }
+
+  .heading1 h1 {
+    font-size: 1em;
+    width: 100%;
+    margin: auto;
+  }
+
+  .container1 {
+    flex-direction: column;
+    margin: 25px auto;
+  }
+
+  .container1 section {
+    padding: 25px 10px 0px;
+  }
+
+  .container2 {
+    flex-direction: column;
+    margin: 25px auto;
+  }
+
+  .container2 section {
+    padding: 25px 10px 0px;
+  }
+
+  section h4 {
+    font-size: 1.25em;
+  }
+
+  .container3 section {
+    padding-left: 10px;
+  }
+}
+
+// TEST
